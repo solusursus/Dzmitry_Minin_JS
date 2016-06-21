@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>task2.2</title>
+
+    <script type="text/javascript">
+
+        var deliv = prompt("Enter delivery method : ", "0");
+        var numDel = 1;
+
+        document.write("The number of delivery method: ");
+
+        do {
+
+            if (deliv == 0) {
+                numDel = 0;
+                break;
+            }
+            else {
+                numDel = numDel * deliv;
+                deliv = deliv - 1;
+            }
+        }
+        while (deliv > 0);
+
+        document.write(numDel);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
